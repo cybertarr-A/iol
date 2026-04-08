@@ -1,0 +1,33 @@
+system:
+  update_interval_sec: 1.0     # Baseline telemetry loop polling frequency
+  dry_run: true                # Run without actually pausing or renicing processes
+  log_level: "INFO"            # Log level (DEBUG, INFO, WARNING, ERROR)
+  db_path: "iol_behavior.db"   # Path to SQLite DB
+
+monitor:
+  cpu_spike_threshold: 80.0    # Initial CPU percentage signifying a spike
+  memory_threshold: 90.0       # Memory percentage usage requiring action
+  thermal_threshold: 75.0      # Temp limit in Celsius
+
+learning:
+  history_window_days: 7       # Keep behavioral history for this many days
+
+executor:
+  max_timeslice_ms: 100        # Max execution time allowed per background burst
+  whitelist:                   # Core processes that MUST never be touched
+    - systemd
+    - sshd
+    - Xorg
+    - dbus-daemon
+    - gnome-shell
+    - plasma-desktop
+    - kwin_x11
+    - kwin_wayland
+    - pulseaudio
+    - pipewire
+    - htop
+    - top
+    - bash
+    - zsh
+    - tmux
+    - screen
