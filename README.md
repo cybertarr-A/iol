@@ -59,3 +59,7 @@ You can watch the Decision Engine calculate the thermal & runtime acceleration o
 
 ## 🔒 Safety Assurances
 IOL comes standard with extensive Desktop Environment (`gnome`, `kde plasma`, `Xorg`, `pipewire` etc.) whitelists. Critical system daemons (`systemd`, `sshd`) are strictly blocked from receiving CPU suspension interventions. 
+
+## Flow Diagram
+<img width="1031" height="796" alt="image" src="https://github.com/user-attachments/assets/99a6561e-af42-41a7-b027-bb37b05f48ff" />
+
