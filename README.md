@@ -1,3 +1,4 @@
+<img width="1536" height="1024" alt="Futuristic penguin with IOL logo" src="https://github.com/user-attachments/assets/974d5e40-6ba2-4657-a2ef-5924e2b09993" />
 # 🧠 Intelligent OS Layer (IOL)
 
 An advanced, predictive, and self-learning background process governor designed to act as a real-time intelligence layer on top of a Linux OS. 
